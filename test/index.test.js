@@ -15,7 +15,7 @@ test("기본 페이지 테스트", async ({ page }) => {
 
   // 경고창 테스트를 위한 설정
   page.on("dialog", (dialog) => {
-    expect(dialog.message()).toBe("Good morning!");
+    expect(dialog.message()).toBe("Good morning 여러분!");
     dialog.accept();
   });
 
